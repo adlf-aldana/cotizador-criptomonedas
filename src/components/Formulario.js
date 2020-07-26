@@ -32,7 +32,7 @@ const Formulario = () => {
     // Utilizar hook useMoneda
     // debe estar en el orden del return, 
     // no importa el nombre, puede ser el mismo o diferente
-    const [moneda, SelectMoneda, actualizarState] = useMoneda('Elige tu moneda: ', '', MONEDAS);
+    const [moneda, SelectMoneda] = useMoneda('Elige tu moneda: ', '', MONEDAS);
 
     return (
         <form>
