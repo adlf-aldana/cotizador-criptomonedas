@@ -22,7 +22,7 @@ transition: background-color .3& ease;
     cursor: pointer;
 }
 `;
-const Formulario = () => {
+const Formulario = ({ guardarMoneda, guardarCriptomoneda }) => {
 
     const MONEDAS = [
         { codigo: 'USD', nombre: 'Dolar de Estados Unidos' },
@@ -58,6 +58,9 @@ const Formulario = () => {
         }
 
         seterror(false)
+
+        guardarMoneda(moneda)
+        guardarCriptomoneda(criptomoneda)
     }
 
     return (
